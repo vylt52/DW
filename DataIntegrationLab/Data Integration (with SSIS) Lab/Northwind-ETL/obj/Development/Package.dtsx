@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/26/2024 3:55:25 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="PHUNF"
+  DTS:CreatorName="PHUNF\ADMIN"
+  DTS:DTSID="{BD082003-F1DB-468A-96BE-D8650F630AD8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{712059A0-EB35-468D-BF34-461A4DBC3739}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PHUNF.ExternalSources]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5C0F31ED-D315-49A2-9674-AAF3A35FC005}"
+      DTS:ObjectName="PHUNF.ExternalSources">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=PHUNF;Initial Catalog=ExternalSources;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5C0F31ED-D315-49A2-9674-AAF3A35FC005}PHUNF.ExternalSources;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PHUNF.NorthwindSalesDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2A61EC0E-AEFA-40B2-8E79-1C8E4A6A7C09}"
+      DTS:ObjectName="PHUNF.NorthwindSalesDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=PHUNF;Initial Catalog=NorthwindSalesDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{2A61EC0E-AEFA-40B2-8E79-1C8E4A6A7C09}PHUNF.NorthwindSalesDW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PHUNF.NorthwindSalesDWStage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{AB7E45C5-C617-4631-9FCE-0B63CBC985F5}"
+      DTS:ObjectName="PHUNF.NorthwindSalesDWStage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=PHUNF;Initial Catalog=NorthwindSalesDWStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{AB7E45C5-C617-4631-9FCE-0B63CBC985F5}PHUNF.NorthwindSalesDWStage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[PHUNF.NORTHWND]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5BE10F85-1A76-4FA9-A8EF-74C82238276A}"
+      DTS:ObjectName="PHUNF.NORTHWND">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=PHUNF;Initial Catalog=NORTHWND;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{5BE10F85-1A76-4FA9-A8EF-74C82238276A}PHUNF.NORTHWND;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables />
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

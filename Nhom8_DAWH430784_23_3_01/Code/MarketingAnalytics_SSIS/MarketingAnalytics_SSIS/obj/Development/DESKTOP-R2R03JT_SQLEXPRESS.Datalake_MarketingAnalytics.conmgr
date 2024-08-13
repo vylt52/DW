@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-R2R03JT_SQLEXPRESS.Datalake_MarketingAnalytics"
+  DTS:DTSID="{DB8CD3CF-34EC-4B3C-9598-C8F1C473EA3D}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-R2R03JT\SQLEXPRESS;Initial Catalog=Datalake_MarketingAnalytics;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-MarketingAnalytics_SSIS-{DB8CD3CF-34EC-4B3C-9598-C8F1C473EA3D}DESKTOP-R2R03JT\SQLEXPRESS.Datalake_MarketingAnalytics;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
